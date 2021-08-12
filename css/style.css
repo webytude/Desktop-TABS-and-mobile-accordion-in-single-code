@@ -1,0 +1,50 @@
+ul,li{list-style-type: none;}
+            .detailTab li {
+                float: left;
+                cursor: pointer;
+                border: 1px solid #e1e1e1;
+                background-color: #f6f6f6;
+                padding: 0 25px;
+                line-height: 50px;
+                margin-right: 5px;
+                border-radius: 2px 2px 0 0;
+                -webkit-border-radius: 2px 2px 0 0;
+                transition: all 0.3s ease-out 0s;
+                -webkit-transition: all 0.3s ease-out 0s;
+                font-size: 16px;
+            }
+            .detailTab li.current {
+                color: #fff;
+                border-color: #065ca9;
+                background: #0588f5;
+                background: -moz-linear-gradient(top, #0588f5 0%, #1550ac 100%);
+                background: -webkit-linear-gradient(top, #0588f5 0%,#1550ac 100%);
+                background: linear-gradient(to bottom, #0588f5 0%,#1550ac 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0588f5', endColorstr='#1550ac',GradientType=0 );
+            }
+            .accoContain {
+                float: left;
+                width: 100%;
+                margin: 0 0 10px;
+                display: none;
+                border: 1px solid #e1e1e1;
+                opacity: 0;
+                -webkit-transition: opacity 0.5s linear;
+                -o-transition: opacity 0.5s linear;
+                transition: opacity 0.5s linear;
+                visibility: hidden;
+            }
+            .accoContain.in {
+                opacity: 1;
+                visibility: visible;
+            }
+            .accoContain.current {
+                display: block;
+            }
+            .mainTabing h2{display: none;}
+
+            @media only screen and (max-width: 767px){
+                .mainTabing h2{display: block;}
+                .detailTab{display: none;}
+                .accoContain{opacity: 1;visibility: visible;}
+            } 
